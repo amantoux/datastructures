@@ -3,7 +3,7 @@ package org.mantoux.util.datastructures;
 import java.util.Iterator;
 
 /**
- * @param <Item>
+ * @param <Item> The data type
  * @author Alan Mantoux
  */
 public class Queue<Item> implements Iterable<Item> {

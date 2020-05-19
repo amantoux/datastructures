@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.Objects;
 
 /**
- * @param <ITEM>
+ * @param <ITEM> the data type
  * @author Alan Mantoux
  */
 public class Stack<ITEM> implements Iterable<ITEM> {

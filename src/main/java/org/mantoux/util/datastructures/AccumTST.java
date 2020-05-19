@@ -7,7 +7,7 @@ import java.util.Set;
 /**
  * Ternary search tries that accumulates values in a list if they have the same key
  *
- * @param <V>
+ * @param <V> the data type
  * @author Alan Mantoux
  */
 public class AccumTST<V> {
