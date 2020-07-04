@@ -33,7 +33,7 @@ public class AccumTST<V> {
 
   public void delete(String key, V val) {
     Node<V> x = get(root, key, 0);
-    if (x != null) {
+    if (x != null && x.val != null) {
       x.val.remove(val);
       if (x.val.isEmpty())
         x.val = null;
