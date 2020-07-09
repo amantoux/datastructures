@@ -1,5 +1,7 @@
 package org.mantoux.util.datastructures;
 
+import java.util.Collection;
+
 public class SuffixTrie<V> {
 
   private final AccumTST<V> tst;
@@ -23,7 +25,7 @@ public class SuffixTrie<V> {
     }
   }
 
-  public Iterable<V> get(String query) {
+  public Collection<V> get(String query) {
     return tst.valuesWithPrefix(query);
   }
 

@@ -1,5 +1,6 @@
 package org.mantoux.util.datastructures;
 
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -40,7 +41,7 @@ public class AccumTST<V> {
     }
   }
 
-  public Iterable<V> valuesWithPrefix(String prefix) {
+  public Collection<V> valuesWithPrefix(String prefix) {
     // Using Set to avoid duplicates in result
     Set<V> set = new HashSet<>();
     Node<V> x = get(root, prefix.toLowerCase(), 0);
@@ -104,7 +105,7 @@ public class AccumTST<V> {
     private Node<V> left, mid, right;
   }
 
-  Iterable<V> keys() {
+  Collection<V> keys() {
     return null;
   }
 
